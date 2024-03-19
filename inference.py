@@ -15,7 +15,7 @@ state = torch.load(train_saved_path)
 model = TransformerTTS().cuda()
 model.load_state_dict(state["model"])
 
-text = "Hello, World."
+text = "Now I have a voice so I will not be silent anymore."
 name_file = "hello_world.mp3"
 
 
@@ -36,7 +36,7 @@ write_mp3(
     name_file
 )
 
-IPython.display.Audio(
-    audio.detach().cpu().numpy(),
-    rate=hp.sr
-)
+# IPython.display.Audio(
+#     audio.detach().cpu().numpy(),
+#     rate=hp.sr
+# )
