@@ -18,7 +18,7 @@ name_file = "hello_world.mp3"
 
 postnet_mel, gate = model.inference(
   text_to_seq(text).unsqueeze(0).cuda(),
-  gate_threshold=1e-5,
+  stop_threshold=1e-5,
   with_tqdm = False
 )
 
