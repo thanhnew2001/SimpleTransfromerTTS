@@ -4,6 +4,7 @@ import torch
 from model import TransformerTTS
 from melspecs import inverse_mel_spec_to_wav
 from write_mp3 import write_mp3
+from text_to_seq import text_to_seq
 
 
 train_saved_path = "train_SimpleTransfromerTTS.pt"
