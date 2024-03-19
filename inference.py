@@ -6,7 +6,7 @@ from melspecs import inverse_mel_spec_to_wav
 from write_mp3 import write_mp3
 from text_to_seq import text_to_seq
 from matplotlib import pyplot as plt
-import hp
+
 
 
 
